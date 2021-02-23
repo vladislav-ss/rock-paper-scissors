@@ -8,9 +8,40 @@
 </head>
 <body>
     <script>
-        
+        function computerPlay(){
+            let random = Math.floor(Math.random() * 100);
+            if (random => 66){
+                return 'rock';
+            } else if (random => 33){
+                return 'paper';
+            } else {
+                return 'scissors';
+            }
+        }
 
+        function round(computerSelection) {
+            let playerSelection = window.prompt('Choose by typing in rock, paper or scissors');
+            playerSelection = playerSelection.toLowerCase();
+            if (playerSelection == computerSelection) {
+                return 'It is a tie';
+            }
+            if (playerSelection == 'rock' || computerSelection == 'scissors'){
+                return 'You won!';
+            }
+            if (playerSelection == 'scissors' || computerSelection == 'paper'){
+                return 'You won!';
+            }
+            if (playerSelection == 'paper' || computerSelection == 'rock'){
+                return 'You won!';
+            } else {
+                return 'You lost...';
+            }
 
+            function game(computerInput){
+                console.log(round(computerPlay))
+            }
+
+        }
 
 
 
