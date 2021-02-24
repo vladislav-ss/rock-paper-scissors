@@ -41,13 +41,13 @@ function game(){
     console.log('This is a Best of Five game of Rock Paper Scissors');
 
     let i;
-    for(i = 0; i < 5; i++){
+    for (i = 0; i < 5; i++) {
         let playerSelection = window.prompt('Choose by typing in rock, paper or scissors');
         playerSelection = playerSelection.toLowerCase();
         let result = round(playerSelection, computerPlay());
         result;
         console.log('\n');
-        if (result == 'win'){
+        if (result == 'win') {
             playerScore++;
             console.log('You won the round!');
             console.log(`Score PLAYER - ${playerScore}   COMPUTER - ${compScore}`);
