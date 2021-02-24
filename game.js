@@ -21,15 +21,12 @@ function round(playerSelection, computerSelection) {
     }
     if (playerSelection == 'rock' && computerSelection == 'scissors'){
         return 'win';
-        score++;
     }
     if (playerSelection == 'scissors' && computerSelection == 'paper'){
         return 'win';
-        score++;
     }
     if (playerSelection == 'paper' && computerSelection == 'rock'){
         return 'win';
-        score++;
     } else {
         return 'lose';
     }
