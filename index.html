@@ -8,6 +8,8 @@
 </head>
 <body>
     <script>
+
+        // Generates the computer's choice
         function computerPlay(){
             let random = Math.floor(Math.random()*3);
             switch(random){
@@ -19,9 +21,10 @@
                     break;
                 default:
                     return "scissors";
+            }
         }
-    }
 
+        // Plays a round
         function round(playerSelection, computerSelection) {
 
             if (playerSelection == computerSelection) {
@@ -44,12 +47,10 @@
 
         }
 
+        // Best of five game
         function game(){
             let playerScore = 0;
             let compScore = 0;
-            //let playerSelection = window.prompt('Choose by typing in rock, paper or scissors');
-            //playerSelection = playerSelection.toLowerCase();
-            //console.log(round(playerSelection, computerPlay()))
             console.log('This is a Best of Five game of Rock Paper Scissors');
 
             let i;
@@ -85,16 +86,8 @@
             console.log(`Final score is P ${playerScore} - ${compScore} C`)
             }
         
+        // Initialize game
         game();
-
-
-
-
-
-
-
-
-
 
     </script>
 </body>
