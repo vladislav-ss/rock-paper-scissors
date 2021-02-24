@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, Arial, sans-serif;
+    font-weight: 500;
+    color: white;
+}
+
+body {
+    background: linear-gradient(to right, rgb(44, 1, 56), rgb(17, 1, 56));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.frame {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 60vw;
+    min-height: 80vh;
+    border: 1px solid rgba(255, 255, 255, 0.43);
+    border-radius: 2rem;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.423), rgba(29, 0, 101, 0.312));
+}
+
+.title {
+    padding: 0.5rem 0;
+    text-align: center;
+    min-width: 100%;
+    border-color: rgba(255, 255, 255, 0.43);
+    border-style: solid;
+    border-width: 0 0 1px 0;
+}
+
+/* Scoreboard */
+
+.score {
+    min-width: 100%;
+    min-height: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-color: rgba(255, 255, 255, 0.43);
+    border-style: solid;
+    border-width: 0 0 1px 0;
+}
+
+.score h1 {
+    font-size: 8rem;
+}
+
+.score h2 {
+    font-size: 5rem;
+}
+
+#scoreP, #scoreC {
+    font-size: 8rem;
+}
+
+/* Round info */
+
+.info {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+/* Card picker */
+.cards {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 1rem;
+}
+.card {
+    margin: 1.5rem 4rem;
+    min-width: 15rem;
+    min-height: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    border: 3px solid rgba(255, 255, 255, 0.583);
+    border-radius: 1.5rem;
+}
+
+.card img {
+    filter: invert();
+    opacity: 0.9;
+    max-width: 60%;
+
+}
+
+.card text {
+    text-align: center;
+    min-width: 100%;
+    min-height: 100%;
+    padding-top: 0.5rem;
+    font-size: 2rem;
+}
+
+.cards button {
+    background-color: transparent;
+    border: none;
+}
