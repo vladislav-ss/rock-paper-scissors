@@ -64,11 +64,11 @@ function game(){
 
     }
 
-    console.log(`You won ${playerScore} rounds`);
+    console.log(`\nYou won ${playerScore} rounds`);
     if (playerScore > compScore) {
         console.log('\nYou won the game!');
     } else if (playerScore == compScore) {
-        console.log('It is a tie!');
+        console.log('\nIt is a tie!');
     } else {
         console.log('\nYou lost the game...');
     }
