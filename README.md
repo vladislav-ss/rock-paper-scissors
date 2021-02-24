@@ -1,2 +1,2 @@
 # rock-paper-scissors
-JS console based RPS game
+JS Rock Paper Scissors game with UI
